@@ -1,0 +1,19 @@
+server:
+  port: 8181
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+#因爲有nacos可以直接在nacos找到
+#      routes:
+#        - id: provide_route
+#          uri: http://localhost:82
+#          predicates:
+#            - Path=/provide/**
+#          filters:
+#            - StripPrefix=1

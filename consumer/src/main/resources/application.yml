@@ -1,0 +1,6 @@
+server:
+  port: 85
+provider:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+

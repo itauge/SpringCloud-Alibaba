@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+#      filter:
+#        enabled: false
+
+  application:
+    name: provide
+
+server:
+  port: 82
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
